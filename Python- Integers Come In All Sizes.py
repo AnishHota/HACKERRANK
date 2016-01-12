@@ -1,0 +1,6 @@
+a=input()
+b=input()
+c=input()
+d=input()
+z=pow(a,b)+pow(c,d)
+print (long(z))
