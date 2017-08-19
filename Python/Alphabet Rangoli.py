@@ -1,10 +1,10 @@
+#From discussions
+import string
+alpha = string.ascii_lowercase
+
 n = int(input())
-st = str(n)
-length = 4*n-1
-width = 2*n-1
-for i in range(width):
-    for j in range(int((length-2*i)/2)):
-        print('-',end='')
-    for k in range(j,length):
-        print('x',end='')
-    print()
+l=[]
+for i in range(n):
+    s = "-".join(alpha[i:n])
+    l.append((s[::-1]+s[1:]).center(4*n-3,'-'))
+print('\n'.join(l[:0:-1]+l))
