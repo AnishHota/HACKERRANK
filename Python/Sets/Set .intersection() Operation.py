@@ -1,0 +1,5 @@
+input()
+one=set(map(int,input().split()))
+input()
+two=set(map(int,input().split()))
+print(len(one.intersection(two)))
