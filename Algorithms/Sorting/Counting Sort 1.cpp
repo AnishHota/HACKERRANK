@@ -4,7 +4,7 @@ int main()
 {
   long long t,temp;
   cin>>t;
-  long long arr[t] = {0};
+  long long arr[100] = {0};
   for(long long i=0;i<t;i++)
   {
     cin>>temp;
